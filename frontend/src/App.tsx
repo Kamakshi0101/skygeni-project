@@ -8,11 +8,11 @@ function App() {
   const [prediction,setPrediction]=useState(null)
 
   useEffect(()=>{
-    fetch("http://localhost:5000/metrics")
+    fetch("https://skygeni-project-pxsy.onrender.com/metrics")
       .then(res=>res.json())
       .then(data=>setMetrics(data))
 
-    fetch("http://localhost:5000/predict")
+    fetch("https://skygeni-project-pxsy.onrender.com/predict")
       .then(res=>res.json())
       .then(data=>setPrediction(data))
   }, [])
