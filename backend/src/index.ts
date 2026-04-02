@@ -4,6 +4,7 @@ import {read_CSV} from "./utils/csvReader.js";
 import {splitData,metrics, Q3Revenue, simulate} from "./services/csvService.js"
 
 const app=express();
+app.use(express.json());
 app.use(cors());
 app.get("/",async(req, res)=>{
   try
@@ -41,10 +42,9 @@ app.get("/predict",async(req,res)=>
   const data=await Q3Revenue()
   res.json(data)
 })
-app.get("/simulate",async(req,res)=>
-{
-  const conversion=Number(req.query.conversion) || 0
-  const dealSize=Number(req.query.dealSize) || 0
+app.post("/simulate",async(req, res)=>{
+  const conversion=req.body.conversion
+  const dealSize=req.body.dealSize
   const data=await simulate(conversion,dealSize)
   res.json(data)
 })

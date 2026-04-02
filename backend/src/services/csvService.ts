@@ -6,13 +6,13 @@ export const splitData=async()=>
   const Q1:any[]=[],Q2:any[]=[],Q3:any[]=[]
   
   data.forEach((row)=>
-{
+  {
     const month=new Date(row.created_date).getMonth()+1
     if(month>=1 && month<=3)
     {
       Q1.push(row)
     } 
-    else if(month>= 4 && month<=6)
+    else if(month>=4 && month<=6)
     {
       Q2.push(row)
     } 
@@ -49,9 +49,9 @@ export const avgDealSize=(data:any[])=>
   })
   return (totalValue/count)
 }
-export const salesCycle =(data: any[])=>
+export const salesCycle=(data: any[])=>
 {
-  let totalDays = 0,count=0
+  let totalDays=0,count=0
   data.forEach((row)=> 
   {
     if (row.stage==="Closed Won") 
