@@ -12,17 +12,17 @@ function Chart({result}:any)
     { week:"Week 4",baseline:baseline*0.3,scenario: scenario*0.3},
   ]
   return(
-    <div style={{marginTop:"30px"}}>
-      <h3>Scenario Comparison</h3>
+    <div style={{marginTop:"20px"}}>
+      <h3 className="text-white mb-2 text-sm">Scenario Comparison</h3>
 
-      <LineChart width={400} height={300} data={data}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="week" />
-        <YAxis />
+      <LineChart width={360} height={240} data={data}>
+        <CartesianGrid strokeDasharray="3 3" stroke="#4a4a4a" />
+        <XAxis dataKey="week" stroke="#b8b8b8" />
+        <YAxis stroke="#b8b8b8" />
         <Tooltip />
 
-        <Line type="monotone" dataKey="baseline" />
-        <Line type="monotone" dataKey="scenario" />
+        <Line type="monotone" dataKey="baseline" stroke="#d4d4d4" strokeWidth={2} dot={false} />
+        <Line type="monotone" dataKey="scenario" stroke="#8ad1ff" strokeWidth={2} dot={false} />
       </LineChart>
     </div>
   )

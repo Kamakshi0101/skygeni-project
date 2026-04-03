@@ -18,11 +18,11 @@ function App() {
   }, [])
 
   return(
-    <div className="min-h-screen bg-black p-6">
-      <div className="max-w-3xl mx-auto space-y-6">
+    <div className="min-h-screen bg-[#1b1b1b] text-white p-5 border ">
+      <div className="max-w-4xl mx-auto space-y-5">
 
-        <h1 className="text-3xl font-bold text-center text-white mb-6">
-          Sales Dashboard
+        <h1 className="text-3xl font-bold text-white mb-6">
+          SALES DASHBOARD
         </h1>
 
         <Metrics metrics={metrics} />
