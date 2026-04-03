@@ -4,6 +4,7 @@
 
 I built this project to understand how sales data can be analyzed and how small changes in business factors like conversion rate or deal size can affect overall revenue.
 The idea was to take a CSV file with sales data, process it on the backend, and then show useful insights on the frontend. I also added a simulation feature where we can try different scenarios and see how revenue changes.
+
 ---
 ## video link: https://www.loom.com/share/5b623465c1664679a082e7fd4150490c
 
