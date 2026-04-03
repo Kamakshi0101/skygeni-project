@@ -1,12 +1,9 @@
 # Sales Dashboard & Simulation Tool
-
 ## About the Project
-
 I built this project to understand how sales data can be analyzed and how small changes in business factors like conversion rate or deal size can affect overall revenue.
-
 The idea was to take a CSV file with sales data, process it on the backend, and then show useful insights on the frontend. I also added a simulation feature where we can try different scenarios and see how revenue changes.
-
 ---
+## video link: https://www.loom.com/share/5b623465c1664679a082e7fd4150490c
 
 ## What it does
 
@@ -151,6 +148,9 @@ While building this project, I made a few assumptions to simplify the problem an
 * Assumes uniform distribution of deals (no time-based variation inside Q3)
 
 ---
+## Screenshots of the project
+![alt text](image-1.png)
+![alt text](image-2.png)
 
 ## What I learned from this
 
