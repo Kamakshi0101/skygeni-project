@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Chart from "./Chart";
+import VITE_API_URL from "../util/config";
 function Simulation() 
 {
   const [conversion, setConversion] = useState("")
@@ -9,7 +10,7 @@ function Simulation()
   const runSimulation=()=>
   {
     console.log("Button clicked")
-    fetch("http://localhost:5000/simulate",{
+    fetch(`${VITE_API_URL}/simulate`,{
       method:"POST",
       headers:{
         "Content-Type":"application/json",

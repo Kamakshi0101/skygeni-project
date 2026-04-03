@@ -2,17 +2,18 @@ import { useEffect, useState } from "react"
 import Metrics from "./components/Metrics"
 import Prediction from "./components/Prediction"
 import Simulation from "./components/Simulation"
+import VITE_API_URL from "./util/config"
 
 function App() {
   const [metrics,setMetrics]=useState(null)
   const [prediction,setPrediction]=useState(null)
 
   useEffect(()=>{
-    fetch("https://skygeni-project-pxsy.onrender.com/metrics")
+    fetch(`${VITE_API_URL}/metrics`)
       .then(res=>res.json())
       .then(data=>setMetrics(data))
 
-    fetch("https://skygeni-project-pxsy.onrender.com/predict")
+    fetch(`${VITE_API_URL}/predict`)
       .then(res=>res.json())
       .then(data=>setPrediction(data))
   }, [])
