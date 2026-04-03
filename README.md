@@ -1,5 +1,7 @@
 # Sales Dashboard & Simulation Tool
+
 ## About the Project
+
 I built this project to understand how sales data can be analyzed and how small changes in business factors like conversion rate or deal size can affect overall revenue.
 The idea was to take a CSV file with sales data, process it on the backend, and then show useful insights on the frontend. I also added a simulation feature where we can try different scenarios and see how revenue changes.
 ---
@@ -150,7 +152,7 @@ While building this project, I made a few assumptions to simplify the problem an
 ---
 ## Screenshots of the project
 ![alt text](image-1.png)
-![alt text](image-2.png)
+![alt text](image.png)
 
 ## What I learned from this
 
